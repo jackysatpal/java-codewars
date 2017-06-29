@@ -3,7 +3,7 @@ import java.util.List;
 
 class PrimeNumber{
 	public static boolean isPrime(int x){
-		for(int i = 2; i < x/2; i++){
+		for(int i = 2; i < x; i++){
 			if(x % i == 0){
 				return false;
 			}
@@ -26,9 +26,11 @@ class PrimeNumber{
 	}
 	public static void main(String[] args){
 		List<Integer> d = new ArrayList<Integer>();
-		d.add(3);
+		d.add(2);
 		d.add(4);
 		d.add(7);
+		d.add(10);
+		d.add(19);
 		getPrimes(d);
 	}
 }
